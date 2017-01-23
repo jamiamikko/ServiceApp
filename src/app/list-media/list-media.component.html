@@ -1,9 +1,9 @@
-<ul *ngFor="let image of images">
-  <li><img src="http://media.mw.metropolia.fi/wbma/uploads/{{image.filename}}" style="height: 200px;" /></li>
+<ul>
+  <li *ngFor="let image of images"><img src="http://media.mw.metropolia.fi/wbma/uploads/{{image.filename}}" style="height: 200px;" /></li>
 </ul>
 <div *ngFor="let stop of stops; let i = index">
   <h3>Stop {{i}}</h3>
-  <ul *ngFor="let route of stop.patterns">
-    <li>{{ route.name }}</li>
+  <ul>
+    <li *ngFor="let route of stop.patterns">{{ route.name }}</li>
   </ul>
 </div>
