@@ -26,7 +26,7 @@ export class ListMediaComponent implements OnInit {
   getHslMedia() {
     this.digiService.getAllMedia('Gransinmäki').subscribe(
       (res) => {
-        this.stops = res.data.stops[0].patterns;
+        this.stops = res.data.stops;
       }
     )
   }
